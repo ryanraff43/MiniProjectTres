@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        
+        <script src="script.js" defer type="module"></script>
+        
+        
+    </head>
+    <body>
+        <h1>Forbes College Analysis</h1>
+        
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <label for="group-by">Quartile</label>
+                        <select id="group-by">
+                        <option value="q1">First Quartile</option>
+                        <option value="q2">Second Quartile</option>
+                        <option value="q3">Third Quartile</option>
+                        <option value="q4">Fourth Quartile</option>
+                        </select>
+                    </div>
+                    <div class="column">
+                        <a href="about.html"><strong>About Our Project</strong></a>
+                    </div>
+            </div>
+            
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="column" >
+                    <div class="pieChart"></div>
+                    <div id="pieTooltip" class="hidden">
+                        <p><strong>Percentage</strong></p>
+                        <p><span id="value">0</span></p>
+                    </div>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="column" >
+                   
+                        
+                        <div class="priceChart"></div>
+                        <div id="priceTooltip" class="hidden"></div>
+                    </div>
+                    <div class="column">
+                        <div class="acceptanceChart"></div>
+                        <div id="acceptanceTooltip" class="hidden"></div>
+                    </div>  
+                        
+                </div>
+                    
+                </div>
+                
+           
+     
+                
+        <!-- <div class="pieChart"></div>
+        <div id="pieTooltip" class="hidden">
+            <p><strong>Percentage</strong></p>
+            <p><span id="value">0</span></p>
+        </div> -->
+        <!-- <div class="priceChart"></div>
+        <div id="priceTooltip" class="hidden"></div> -->
+        <!-- <div class="acceptanceChart"></div>
+        <div id="acceptanceTooltip" class="hidden"></div> -->
+
+    </body>
+</html>
